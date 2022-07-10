@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.hotelMyCampPage;
@@ -36,4 +37,29 @@ public class HotelMyCampStepDefinitions {
 
     }
 
+    @And("gecersiz password girer")
+    public void gecersizPasswordGirer() {
+        hmcPage.password.sendKeys(ConfigReader.getProperty("hotelWrongPassword"));
+    }
+
+    @Then("sayfaya giris yapilamadigini test eder")
+    public void sayfayaGirisYapilamadiginiTestEder() {
+        Assert.assertTrue(hmcPage.loginButton2.isDisplayed());
+    }
+
+    @And("gecersiz username girer")
+    public void gecersizUsernameGirer() {
+        hmcPage.username.sendKeys(ConfigReader.getProperty("hotelWrongUserName"));
+    }
+
+
+    @And("gecersiz username {string} girer")
+    public void gecersizUsernameGirer(String istenenusername) {
+        hmcPage.username.sendKeys(istenenusername);
+    }
+
+    @And("gecersiz password{string} girer")
+    public void gecersizPasswordGirer(String istenenpassword) {
+        hmcPage.username.sendKeys(istenenpassword);
+    }
 }
