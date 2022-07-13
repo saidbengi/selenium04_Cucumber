@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         plugin={"html:target/cucumber-reports.html"},
         features = "src/test/resources/features",
         glue="stepDefinitions",
-        tags= "@bu",
-        dryRun = false
+        tags= "@datatable",
+        dryRun = true
 )
 
 public class Runner {
