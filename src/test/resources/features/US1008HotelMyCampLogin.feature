@@ -1,5 +1,5 @@
 Feature: US1008 Hotel My Camp Login
-
+@negative
   Scenario Outline: TC13 kullanici gecerli bilgilerle giris yapar
 
     Given kullanici "hotelMyCamp" anasayfasinda
