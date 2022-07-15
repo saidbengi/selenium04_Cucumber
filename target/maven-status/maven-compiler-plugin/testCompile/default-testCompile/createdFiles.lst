@@ -1,0 +1,15 @@
+stepDefinitions\AmazonStepDefinitions.class
+stepDefinitions\DataTablesStepDefinitions.class
+pages\GuruPage.class
+pages\hotelMyCampPage.class
+pages\HerokuappPage.class
+stepDefinitions\HotelMyCampStepDefinitions.class
+pages\AmazonPage.class
+runners\TestRunner.class
+utilities\Driver.class
+stepDefinitions\Hooks.class
+runners\TestRunner2.class
+pages\DataTablesPage.class
+utilities\ConfigReader.class
+stepDefinitions\GuruStepDefinitions.class
+stepDefinitions\HerokuStepDefinitions.class
